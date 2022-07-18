@@ -16,6 +16,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -44,7 +45,7 @@ fun BooksScreen(navController: NavController, viewModel: BooksViewModel) =
                     contentScale = ContentScale.Crop
                 )
             },
-            trailingIcon = { Icon(Icons.Default.Search, null) }
+            trailingIcon = { Icon(Icons.Default.Search, null, tint = Color.White) }
         )
 
         AsyncView(carouselImages) { images ->

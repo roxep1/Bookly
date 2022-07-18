@@ -37,9 +37,9 @@ fun BookDetailScreen(
 
     TopIconsBar(leadingIcon = {
         IconButton(onClick = navController::popBackStack) {
-            Icon(Icons.Default.Close, null)
+            Icon(Icons.Default.Close, null, tint = Color.White)
         }
-    }, trailingIcon = { Icon(Icons.Default.ShoppingCart, null) },
+    }, trailingIcon = { Icon(Icons.Default.ShoppingCart, null, tint = Color.White) },
         modifier = Modifier.constrainAs(topIconsBar) {
             top.linkTo(parent.top)
         }
